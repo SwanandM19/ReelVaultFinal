@@ -1,7 +1,6 @@
 'use client';
 
-// ReelVault landing page — drop this file into a Next.js (App Router) project
-// as app/page.tsx (or src/app/page.tsx). Plain React, no extra dependencies.
+
 
 import { useEffect } from 'react';
 

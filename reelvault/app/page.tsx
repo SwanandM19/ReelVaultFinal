@@ -695,7 +695,7 @@ export default function Page() {
           <h2>Stop losing good ideas in your bookmarks.</h2>
           <p>Share your first reel and see the breakdown in under a minute.</p>
           <div className="hero-ctas">
-            <a className="btn btn-primary" href="https://drive.google.com/file/d/1gRkD5TXQTC8foEwIPW_poL_gJWrkACmq/view?usp=drive_link">Get ReelVault</a>
+            <a className="btn btn-primary" href="https://drive.google.com/drive/folders/1yrGRI_c9qBuXV0Ymp913ZiqqIuwbHYnd">Get ReelVault</a>
             <a className="btn btn-ghost" href="#how">See how it works</a>
           </div>
         </div>

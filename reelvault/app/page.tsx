@@ -1,6 +1,7 @@
 'use client';
 
-
+// ReelVault landing page — drop this file into a Next.js (App Router) project
+// as app/page.tsx (or src/app/page.tsx). Plain React, no extra dependencies.
 
 import { useEffect } from 'react';
 
@@ -700,7 +701,7 @@ export default function Page() {
           <h2>Stop losing good ideas in your bookmarks.</h2>
           <p>Share your first reel and see the breakdown in under a minute.</p>
           <div className="hero-ctas">
-            <a className="btn btn-primary" href="https://github.com/SwanandM19/ReelVaultFinal/releases/download/v1.0.0/reelvault.apk">Get ReelVault</a>
+            <a className="btn btn-primary" href="https://drive.google.com/file/d/1gRkD5TXQTC8foEwIPW_poL_gJWrkACmq/view?usp=drive_link">Get ReelVault</a>
             <a className="btn btn-ghost" href="#how">See how it works</a>
           </div>
         </div>

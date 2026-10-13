@@ -3,6 +3,7 @@
 // ReelVault landing page — drop this file into a Next.js (App Router) project
 // as app/page.tsx (or src/app/page.tsx). Plain React, no extra dependencies.
 
+import Image from 'next/image';
 import { useEffect } from 'react';
 
 const css = `
@@ -81,7 +82,7 @@ const css = `
   }
   .brand{ display:flex; align-items:center; gap:9px; font-weight:900; font-size:1.05rem; }
   .brand-mark{ width:24px; height:24px; flex:none; }
-  .brand-mark svg{ display:block; }
+  .brand-mark img, .ph-brand img{ display:block; width:100%; height:100%; object-fit:contain; }
   .nav-links{ display:flex; gap:28px; font-size:.9rem; font-weight:700; }
   .nav-links a{ text-decoration:none; opacity:.75; transition:opacity .15s; }
   .nav-links a:hover{ opacity:1; }
@@ -146,7 +147,6 @@ const css = `
   .ph-burger{ display:flex; flex-direction:column; gap:3px; }
   .ph-burger span{ width:13px; height:1.6px; background:var(--ink); border-radius:2px; }
   .ph-brand{ display:flex; align-items:center; gap:5px; font-weight:900; font-size:.74rem; }
-  .ph-brand svg{ width:13px; height:13px; }
   .ph-avatar{ width:20px; height:20px; border-radius:50%; background:var(--surface-hover); border:1px solid var(--line); font-size:.5rem; font-weight:700; display:flex; align-items:center; justify-content:center; }
 
   .ph-greet{ padding:6px 14px 0; }
@@ -390,10 +390,7 @@ export default function Page() {
       <nav className="nav">
         <div className="brand">
           <span className="brand-mark">
-            <svg viewBox="0 0 24 24" width="24" height="24">
-              <path d="m12 2 10 9-10 9-10-9Z" fill="#C5FF00" />
-              <circle cx="12" cy="11" r="3" fill="#111111" />
-            </svg>
+            <Image src="/logo.png" alt="ReelVault logo" width={24} height={24} priority />
           </span>
           ReelVault
         </div>
@@ -434,16 +431,13 @@ export default function Page() {
               <div className="ph-header">
                 <div className="ph-burger"><span></span><span></span><span></span></div>
                 <div className="ph-brand">
-                  <svg viewBox="0 0 24 24">
-                    <path d="m12 2 10 9-10 9-10-9Z" fill="#C5FF00" />
-                    <circle cx="12" cy="11" r="3" fill="#111111" />
-                  </svg>
+                  <Image src="/logo.png" alt="ReelVault logo" width={20} height={20} />
                   ReelVault
                 </div>
-                <div className="ph-avatar">PK</div>
+                <div className="ph-avatar">JK</div>
               </div>
               <div className="ph-greet">
-                <div className="hi">Hey Pranav,</div>
+                <div className="hi">Hey John,</div>
                 <div className="heading">Explore reels</div>
               </div>
               <div className="ph-search">
@@ -478,10 +472,10 @@ export default function Page() {
                   <span style={{ background: '#FFBD2E' }}></span>
                   <span style={{ background: '#27C93F' }}></span>
                 </div>
-                <div className="dets-platform">
-                  <span className="p-pill">Instagram</span>
-                  <span className="handle">@fit_eats</span>
-                </div>
+                <div className="dets-platform" style={{ marginTop: "12px" }}>
+  <span className="p-pill">Instagram</span>
+  <span className="handle">@fit_eats</span>
+</div>
               </div>
               <div className="dets-title">5-Minute Creamy Pasta</div>
               <div className="dets-tabs">
@@ -710,10 +704,7 @@ export default function Page() {
       <footer>
         <div className="brand">
           <span className="brand-mark">
-            <svg viewBox="0 0 24 24" width="22" height="22">
-              <path d="m12 2 10 9-10 9-10-9Z" fill="#C5FF00" />
-              <circle cx="12" cy="11" r="3" fill="#111111" />
-            </svg>
+            <Image src="/logo.png" alt="ReelVault logo" width={22} height={22} />
           </span>
           ReelVault
         </div>
